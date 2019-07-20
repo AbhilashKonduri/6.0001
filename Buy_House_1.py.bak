@@ -1,0 +1,10 @@
+Total_Cost= float(input("Enter total cost of the House"))
+Portion_Saved = float(input("Enter in decimal the portion of your salery to be saved"))
+Annual_Salery = float(input("Enter your annual Salery"))
+Portion_Downpayment = (0.25*Total_Cost)
+Current_Savings=0
+Total_months = 0
+while (Current_Savings <= Portion_Downpayment):
+    Current_Savings += ((Portion_Saved*(Annual_Salery/12))+Current_Savings*(0.04/12))
+    Total_months +=1
+print("Number of months =",Total_months)
